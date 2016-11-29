@@ -14,7 +14,7 @@ def add_layer(inputs, in_size, out_size, activation_function=None):
         outputs = activation_function(Wx_plus_b)
     return outputs
 
-data = np.loadtxt('./meeting/newtxt.txt')
+data = np.loadtxt('./newtxt.txt')
 x_data = data[0:10000,3][:,np.newaxis]
 y_data = data[0:10000,2][:,np.newaxis]
 y_data = y_data/1000000
